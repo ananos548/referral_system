@@ -19,9 +19,9 @@ URL: /api/profile/login/
 
 json
 
-{
-    "auth_code": "1234"
-}
+    {
+        "auth_code": "1234"
+    }
 
 Верификация с помощью кода
 
@@ -42,9 +42,9 @@ URL: /api/profile/verify/
 
 json
 
-{
-    "message": "User verified and invite code generated"
-}
+    {
+        "message": "User verified and invite code generated"
+    }
 
 Просмотр профиля пользователя
 
@@ -66,22 +66,8 @@ URL: /api/profile/{invite_code}/
 
 json
 
-{
-    "phone": "1234567890",
-    "invite_code": "ABC123",
-    "referred_users": ["9876543210", "8765432109"]
-}
-
-Запуск сервера
-
-Чтобы запустить сервер и начать использовать API, выполните следующие шаги:
-
-    Установите зависимости, указанные в файле requirements.txt, с помощью команды pip install -r requirements.txt.
-
-    Примените миграции для базы данных с помощью команды python manage.py migrate.
-
-    Запустите сервер с помощью команды python manage.py runserver.
-
-    Теперь вы можете отправлять запросы к API по указанным URL.
-
-Убедитесь, что вы предоставили правильные параметры в запросах и обработали ответы в своем клиентском коде.
+    {
+        "phone": "1234567890",
+        "invite_code": "ABC123",
+        "referred_users": ["9876543210", "8765432109"]
+    }
