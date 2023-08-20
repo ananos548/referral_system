@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "e418b6f3-e23a-4d09-886c-feccdcb80fce",
+		"name": "Referral System API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21508013"
+	},
+	"item": [
+		{
+			"name": "All records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://194.26.138.178/api/profile/",
+					"protocol": "http",
+					"host": [
+						"194",
+						"26",
+						"138",
+						"178"
+					],
+					"path": [
+						"api",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSRFToken",
+						"value": "jKVWXXSSnc0Bxf1diTDhC6Qhhcqf9ZJW",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=jKVWXXSSnc0Bxf1diTDhC6Qhhcqf9ZJW",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "+123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://194.26.138.178/api/profile/login/",
+					"protocol": "http",
+					"host": [
+						"194",
+						"26",
+						"138",
+						"178"
+					],
+					"path": [
+						"api",
+						"profile",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "+123456789",
+							"type": "text"
+						},
+						{
+							"key": "auth_code",
+							"value": "5253",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://194.26.138.178/api/profile/verify/",
+					"protocol": "http",
+					"host": [
+						"194",
+						"26",
+						"138",
+						"178"
+					],
+					"path": [
+						"api",
+						"profile",
+						"verify",
+						""
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "14",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "1934",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://194.26.138.178/api/profile/14",
+					"protocol": "http",
+					"host": [
+						"194",
+						"26",
+						"138",
+						"178"
+					],
+					"path": [
+						"api",
+						"profile",
+						"14"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
