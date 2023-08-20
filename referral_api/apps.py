@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ReferralAppConfig(AppConfig):
+class ReferralApiConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'referral_app'
+    name = 'referral_api'
