@@ -39,5 +39,5 @@ class UserProfileViewSet(ModelViewSet):
             profile.invite_code = generate_invite_code()
             profile.save()
             return Response({'message': 'User verified and invite code generated'})
-        except Profile.DoesNotExists:
+        except:
             return Response({'message': 'Verification failed'}, status=status.HTTP_400_BAD_REQUEST)
