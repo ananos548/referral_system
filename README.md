@@ -77,3 +77,6 @@ json
 Эти команды необходимо делать в диркетории с Dockerfile
 1. docker-compose build
 2. docker-compose up
+
+Так же добавлено описание Документирование апи при помощи django redux
+URL: /swagger/
